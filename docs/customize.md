@@ -29,6 +29,7 @@ User has built a fish-based Context Vault system in `~/context-vault` and synced
 - `ctxnote` — timestamped note
 - `ctxrun` — run command, clean output via cgpt, append to log
 - `ctxsnap` — snapshot files into `snaps/`
+- `ctxdone` — end-of-session wrapper (`ctxoff → ctxsum → commit`)
 - `ctxdiff` — capture diffs (git or raw)
 - `ctxsum` — summary template (Background / Decisions / Status / Next)
 
@@ -42,9 +43,7 @@ User has built a fish-based Context Vault system in `~/context-vault` and synced
 - **Start of session**: remind user these tools exist, ask if I should check `docs/customize.md` for full spec.
 - **Mid-session**: if AutoLog (`ctxon`) has been active for a long stretch without a `ctxsum`, nudge the user to summarize.
 - **End of session**: if user says “done” or “done for the day”:
-  - Remind to `ctxoff`
-  - Run `ctxsum` to close log
-  - Push/commit vault if syncing to GitHub
+- Run `ctxdone` to close log and sync vault
 - **Reminders must be short, unobtrusive**, not disrupt normal conversation.
 
 ## Philosophy
