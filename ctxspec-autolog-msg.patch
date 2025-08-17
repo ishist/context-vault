@@ -1,0 +1,12 @@
+diff --git a/bin/ctxspec b/bin/ctxspec
+index abcdef1..1234567 100755
+--- a/bin/ctxspec
++++ b/bin/ctxspec
+@@ -62,7 +62,13 @@
+-    ctxon
++    ctxon
++    echo "ctxspec: AutoLog resumed."
+ else
+-    # leave it off
++    echo "ctxspec: AutoLog was OFF before, leaving it OFF."
+ end

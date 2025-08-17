@@ -1,0 +1,89 @@
+#!/usr/bin/env fish
+
+function _resume_autolog
+    if test $was_on -eq 1
+        ctxon
+        echo "ctxspec: AutoLog resumed."
+    else
+        echo "ctxspec: AutoLog was OFF before, leaving it OFF."
+    end
+end
+# ctxspec — pause AutoLog, edit customize.md, commit+push, resume AutoLog
+
+set -l repo ~/context-vault
+cd $repo; or begin; echo "ctxspec: repo not found: $repo"; exit 1; end
+
+# locate customize.md
+set -l file docs/customize.md
+if not test -f $file
+    set file (find . -type f -name 'customize.md' | head -n1)
+    test -n "$file"; or begin; echo "ctxspec: customize.md not found"; exit 1; end
+end
+
+# detect autolog state
+set -l was_on 0
+if type -q ctxstatus
+    ctxstatus | grep -qi 'ON'; and set was_on 1
+end
+
+# pause logging so logs stop changing during pull/commit
+type -q ctxoff; and ctxoff
+
+# sync with remote to avoid push rejects
+git fetch origin main >/dev/null 2>&1
+git pull --rebase origin main; or begin
+    echo "ctxspec: pull --rebase failed; resolve and re-run"
+_resume_autolog
+    exit 1
+end
+
+# backup
+cp $file $file.bak.(date +%s)
+
+# edit
+if type -q micro
+    micro $file
+else if set -q EDITOR
+    $EDITOR $file
+else
+    nano $file
+end
+
+# nothing changed? bail cleanly
+git diff --quiet -- $file; and begin
+    echo "ctxspec: no changes"
+_resume_autolog
+    exit 0
+end
+
+# stage/commit/push
+git add $file
+set -l msg "docs(customize): spec update via ctxspec "(date -u +'%Y-%m-%dT%H:%M:%SZ')
+git commit -m "$msg"; or begin
+    echo "ctxspec: commit failed"
+_resume_autolog
+    exit 1
+end
+
+git push origin main; or begin
+    echo "ctxspec: push failed; try: git pull --rebase && git push"
+_resume_autolog
+    exit 1
+end
+
+# resume logging if it was on
+_resume_autolog
+    ctxon
+    echo "ctxspec: AutoLog resumed."
+else
+    echo "ctxspec: AutoLog was OFF before, leaving it OFF."
+end
+
+# show a compact commit summary
+if type -q cgpt
+    git --no-pager show --stat --oneline -1 | cgpt -t -l=txt
+else
+    git --no-pager show --stat --oneline -1
+end
+
+echo "ctxspec: done."

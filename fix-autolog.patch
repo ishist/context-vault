@@ -1,0 +1,14 @@
+diff --git a/bin/ctxspec b/bin/ctxspec
+index 1234567..89abcde 100755
+--- a/bin/ctxspec
++++ b/bin/ctxspec
+@@ -120,7 +120,13 @@
+-# resume logging if it was on
+-test $was_on -eq 1; and ctxon
++# resume logging if it was on
++if test $was_on -eq 1
++    ctxon
++    echo "ctxspec: AutoLog resumed."
++else
++    echo "ctxspec: AutoLog was OFF before, leaving it OFF."
++end
