@@ -1,0 +1,16 @@
+#!/usr/bin/env fish
+set -l src $argv[1]
+test -f "$src"; or begin; echo "ctxsnap_in: file not found: $src"; exit 1; end
+
+set -l repo ~/context-vault
+set -l name (basename "$src")
+set -l stamp (date +%F)  # or: date -r "$src" +%F
+set -l dest "$repo/logs/$stamp-$name"
+
+mkdir -p "$repo/logs"
+cp "$src" "$dest"; or exit 1
+cd $repo; or exit 1
+git add "$dest"
+git commit -m "logs: add $name (imported via ctxsnap_in on $stamp)"
+git push origin main
+echo "Imported → $dest"
