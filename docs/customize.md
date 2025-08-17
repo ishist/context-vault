@@ -46,6 +46,18 @@ User has built a fish-based Context Vault system in `~/context-vault` and synced
 - Run `ctxdone` to close log and sync vault
 - **Reminders must be short, unobtrusive**, not disrupt normal conversation.
 
+## Spec Maintenance
+
+- If a recurring pattern, tool, alias, env change, or workflow tweak shows up (e.g., new ctx* tool, persistent reminders, package manager change, guardrails), **prompt to add it here**.
+- Use the prompt: “Add this to customize.md now via `ctxspec` (pauses logging)?”
+- Assistant should suggest additions when it notices:
+  - repeated commands/workflows (3+ uses),
+  - new ctx* helpers or script patterns,
+  - environment changes (kernel/WM/driver/packman),
+  - guardrails & gotchas we reference repeatedly,
+  - session hygiene policies that became standard (e.g., `ctxdone`).
+- Keep edits minimal, stable, and idempotent. Prefer bullets over prose. Do not hide errors.
+
 ## Philosophy
 - Do not suppress errors (e.g. git fatal messages in ctxdiff) — they are signals of wrong usage.
 - Prioritize stability and minimalism: no extra automation until base tools are stable.
