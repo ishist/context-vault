@@ -46,6 +46,21 @@ User has built a fish-based Context Vault system in `~/context-vault` and synced
 - Run `ctxdone` to close log and sync vault
 - **Reminders must be short, unobtrusive**, not disrupt normal conversation.
 
+## Shell Notes (fish-specific)
+
+- **No bash heredocs**: `cat <<EOF ... EOF` does **not** work in fish on my system.
+  Use one of these instead when creating files from chat:
+  1) `micro <path>` and paste the body, then `chmod +x`.
+  2) Fish-native:
+     ```fish
+     begin
+         # lines...
+     end > <path> ; chmod +x <path>
+     ```
+  3) Or `printf '%s\n' ... > <path>` (safe for multi-line).
+
+- Assistant: when proposing scripts for me, **default to “open in Micro and paste”** or the `begin … end > f
+
 ## Spec Maintenance
 
 - If a recurring pattern, tool, alias, env change, or workflow tweak shows up (e.g., new ctx* tool, persistent reminders, package manager change, guardrails), **prompt to add it here**.
