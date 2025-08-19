@@ -59,7 +59,15 @@ User has built a fish-based Context Vault system in `~/context-vault` and synced
      ```
   3) Or `printf '%s\n' ... > <path>` (safe for multi-line).
 
-- Assistant: when proposing scripts for me, **default to “open in Micro and paste”** or the `begin … end > f
+- Assistant: when proposing scripts for me, **default to “open in Micro and paste”** or the fish-native `begin … end > <path>` pattern.
+  - Example (create a script safely, then chmod):
+    ```fish
+    begin
+      echo '#!/usr/bin/env bash'
+      echo 'set -euo pipefail'
+      echo 'echo "hello"'
+    end > ~/bin/hello.sh ; chmod +x ~/bin/hello.sh
+    ```
 
 ## Spec Maintenance
 
