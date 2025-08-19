@@ -3,13 +3,15 @@
 - Repo: ishist/context-vault
 - Default branch: main
 - RAW_BASE: https://raw.githubusercontent.com/ishist/context-vault/main/
-- Generated: 2025-08-18T20:18:57Z
+- Generated: 2025-08-19T03:54:19Z
 - Dirs: docs logs
 
 ## Newest 20
-- 2025-08-18T16:05:02-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18.md
-- 2025-08-18T15:31:47-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18-context-dump.md
-- 2025-08-18T15:19:46-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/docs/file-index.md
+- 2025-08-18T23:54:19-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18.md
+- 2025-08-18T23:54:19-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18-context-dump.md
+- 2025-08-18T23:54:19-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/docs/file-index.md
+- 2025-08-18T23:54:09-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19-profile-bootstrap-lock-context-dump.md
+- 2025-08-18T16:27:14-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18-file-index-project-context-dump.md
 - 2025-08-17T21:27:52-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-17.md
 - 2025-08-17T21:27:52-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-17-context-dump.md
 - 2025-08-16T22:47:02-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-16-context-dump.md
@@ -36,7 +38,9 @@ logs/2025-08-16.md
 logs/2025-08-17-context-dump.md
 logs/2025-08-17.md
 logs/2025-08-18-context-dump.md
+logs/2025-08-18-file-index-project-context-dump.md
 logs/2025-08-18.md
+logs/2025-08-19-profile-bootstrap-lock-context-dump.md
 logs/cgpt-integration-archive.md
 logs/cgpt-upgrade-archive.md
 logs/context-vault-archive.md
@@ -55,7 +59,9 @@ https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-16.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-17-context-dump.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-17.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18-context-dump.md
+https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18-file-index-project-context-dump.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18.md
+https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19-profile-bootstrap-lock-context-dump.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/cgpt-integration-archive.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/cgpt-upgrade-archive.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/context-vault-archive.md
