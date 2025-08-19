@@ -69,6 +69,21 @@ User has built a fish-based Context Vault system in `~/context-vault` and synced
     end > ~/bin/hello.sh ; chmod +x ~/bin/hello.sh
     ```
 
+## Spec Metadata
+- Last updated: 2025-08-19
+- Version: 0.1.0
+
+## Paths & Locations
+- Context Vault repo: `~/context-vault`
+- ctx* helpers live in: `~/bin` (on PATH) and/or `~/.config/fish/functions/` (document actual install)
+
+## cgpt Quick Reference
+- Clean + trim head/tail with language tag:
+  ```fish
+  some_command | cgpt -t2 md
+  ```
+  Use `-t` for head-only. Warn before pasting very large outputs.
+
 ## Spec Maintenance
 
 - If a recurring pattern, tool, alias, env change, or workflow tweak shows up (e.g., new ctx* tool, persistent reminders, package manager change, guardrails), **prompt to add it here**.
