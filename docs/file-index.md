@@ -3,13 +3,16 @@
 - Repo: ishist/context-vault
 - Default branch: main
 - RAW_BASE: https://raw.githubusercontent.com/ishist/context-vault/main/
-- Generated: 2025-08-19T18:31:18Z
+- Generated: 2025-08-20T04:08:47Z
 - Dirs: docs logs
 
 ## Newest 20
+- 2025-08-20T00:08:47-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-20.md
+- 2025-08-20T00:08:47-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-20-context-dump.md
+- 2025-08-20T00:08:47-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19.md
+- 2025-08-20T00:08:47-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/docs/file-index.md
+- 2025-08-20T00:08:35-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-20-pipboy-theme-context-dump.md
 - 2025-08-19T14:31:14-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19-context-dump.md
-- 2025-08-19T14:31:14-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/docs/file-index.md
-- 2025-08-19T14:30:44-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19.md
 - 2025-08-19T14:19:51-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/docs/customize.md
 - 2025-08-18T23:54:19-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18.md
 - 2025-08-18T23:54:19-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18-context-dump.md
@@ -24,9 +27,6 @@
 - 2025-08-16T18:01:54-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/README.md
 - 2025-08-16T18:01:54-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/ml4w-omarchy-archive.md
 - 2025-08-16T18:01:54-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/cgpt-upgrade-archive.md
-- 2025-08-16T18:01:54-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/cgpt-integration-archive.md
-- 2025-08-16T00:28:07-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-15.md
-- 2025-08-16T00:03:16-04:00 — https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-16-handoff.md
 
 ## Relative paths (expand with RAW_BASE)
 docs/customize.md
@@ -44,6 +44,9 @@ logs/2025-08-18.md
 logs/2025-08-19-context-dump.md
 logs/2025-08-19.md
 logs/2025-08-19-profile-bootstrap-lock-context-dump.md
+logs/2025-08-20-context-dump.md
+logs/2025-08-20.md
+logs/2025-08-20-pipboy-theme-context-dump.md
 logs/cgpt-integration-archive.md
 logs/cgpt-upgrade-archive.md
 logs/context-vault-archive.md
@@ -67,6 +70,9 @@ https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-18.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19-context-dump.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-19-profile-bootstrap-lock-context-dump.md
+https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-20-context-dump.md
+https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-20.md
+https://raw.githubusercontent.com/ishist/context-vault/main/logs/2025-08-20-pipboy-theme-context-dump.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/cgpt-integration-archive.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/cgpt-upgrade-archive.md
 https://raw.githubusercontent.com/ishist/context-vault/main/logs/context-vault-archive.md
