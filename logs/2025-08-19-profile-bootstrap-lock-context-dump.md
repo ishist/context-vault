@@ -11,3 +11,6 @@
 
 ## Notes
 This file represents the finalized defaults for profile parsing and behavior across new instances.  
+
+⚠️ No context preserved for this day (empty dump detected by scan 2025-08-21).
+
